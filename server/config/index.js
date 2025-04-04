@@ -1,0 +1,9 @@
+module.exports={
+    dev:{
+        host:'1.12.235.208',
+        user:'MyData',
+        password:'htya6217',
+        port:'3306',
+        database:'mydata'
+    }
+}
