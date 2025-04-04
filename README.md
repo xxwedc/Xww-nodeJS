@@ -25,14 +25,14 @@ yarn install
 node app.js
 ```
 
+serve默认端口：8080
+
+## 小程序注意事项说明：
+
+小程序默认请求数据接口为：http://localhost:8080/xxxx/xxxx
+
+如果更改服务器端口，则小程序请求接口http://localhost:8080需要全局替换为修改后端口。
+
 ## 注意：
 
 微信开发文档更新openID获取方式后，部分需要获取openID后使用的功能失效。
-
-小程序运行效果图：
-
-![image-20250404153821018](C:\Users\x\AppData\Roaming\Typora\typora-user-images\image-20250404153821018.png)
-
-![image-20250404153938031](C:\Users\x\AppData\Roaming\Typora\typora-user-images\image-20250404153938031.png)
-
-![image-20250404153959046](C:\Users\x\AppData\Roaming\Typora\typora-user-images\image-20250404153959046.png)
