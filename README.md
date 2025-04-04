@@ -19,7 +19,7 @@ yarn install
 
 2、数据库连接，在serve/config/index.js文件中配置自己的数据库连接信息和密码。
 
-3、运行，命令行如下：
+3、运行app.js文件，命令行如下：
 
 ```
 node app.js
