@@ -1,8 +1,8 @@
 module.exports={
     dev:{
-        host:'1.12.235.208',
-        user:'MyData',
-        password:'htya6217',
+        host:'127.0.0.1',
+        user:'root',
+        password:'123456',
         port:'3306',
         database:'mydata'
     }

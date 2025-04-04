@@ -2,6 +2,7 @@
 const express = require("express");
 
 const bodyParser=require('body-parser');
+const mall = require("./controller/mall");
 
 const server=express();
 
@@ -27,6 +28,13 @@ server.use('/user',require('./routers/user'));
 
 //图片转为URL
 server.use('/user',require('./routers/imgURL'))
+
+//文件上传
+server.use('/file',require('./routers/upload'))
+//评论表路由
+server.use('/comment',require('./routers/comment'))
+// mall路由
+server.use('/mall',require('./routers/mall'))
 
 
 // 监听端口

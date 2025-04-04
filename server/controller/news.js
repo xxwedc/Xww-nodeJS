@@ -16,11 +16,13 @@ class newsController{
         //查询整张news表
         let sql="select * from news";
         let result = await db.query(sql)
+        //按照时间先后排序，并返回json字符串
+        var b = result.sort((c,b) => {return (c.time<b.time)?1:-1});
         // console.log(result);
         //返回数据为json，到前端
         response.json({
             code:200,
-            data:result,
+            data:b,
             message:"新闻查询成功"
         })
     }

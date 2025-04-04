@@ -24,3 +24,15 @@ yarn install
 ```
 node app.js
 ```
+
+## 注意：
+
+微信开发文档更新openID获取方式后，部分需要获取openID后使用的功能失效。
+
+小程序运行效果图：
+
+![image-20250404153821018](C:\Users\x\AppData\Roaming\Typora\typora-user-images\image-20250404153821018.png)
+
+![image-20250404153938031](C:\Users\x\AppData\Roaming\Typora\typora-user-images\image-20250404153938031.png)
+
+![image-20250404153959046](C:\Users\x\AppData\Roaming\Typora\typora-user-images\image-20250404153959046.png)
