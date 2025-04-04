@@ -1,0 +1,16 @@
+/* componets/title/title.wxss */
+.title{
+  padding: calc(750rpx * 15/320) 0;
+}
+
+.title::before{
+  content: "";
+  width: 4px;
+  height: 15px;
+  background: var(--mainColor);
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  margin-right: 10px;
+  margin-left: 2px;
+}

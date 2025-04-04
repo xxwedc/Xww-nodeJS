@@ -1,0 +1,29 @@
+<!--componets/goods_detail/goods_detail.wxml-->
+<view class="goodsDetailBg">
+  <view wx:for="{{userData}}" wx:key="index" class="userInfo">
+    <image class="userImg" src="{{item.avatarUrl}}"></image>
+    <view>
+      <text class="name">{{item.name}}</text>
+      <text class="time">发布于{{goodsDetailData[0].time}}</text>
+    </view>
+  </view>
+  <view wx:for="{{goodsDetailData}}" wx:key="index" class="goodsInfo">
+    <view class="priceInfo">
+      ￥<text class="price">{{item.price}}</text>
+    </view>
+    <view class="DetailInfo">
+      <text>{{item.detail}}</text>
+    </view>
+    <view class="imglist">
+      <view wx:if="{{item.img2}}" class="detailImg">
+        <image src="{{item.img2}}" mode="widthFix"></image>
+      </view>
+      <view wx:if="{{item.img1}}" class="detailImg">
+        <image src="{{item.img1}}" mode="widthFix"></image>
+      </view>
+      <view wx:if="{{item.img3}}" class="detailImg">
+        <image src="{{item.img3}}" mode="widthFix"></image>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,24 @@
+<!--componets/goods_banner/goods_banner.wxml-->
+<view class="banner">
+  <swiper
+  class="swiper"
+      indicator-dots="true"
+      indicator-active-color="#d43c33"
+      indicator-color="rgba(255,255,0,0,85)"
+      autoplay="true"
+      duration="900"
+      circular="true"
+      interval="3000"
+  >
+      <swiper-item class="swiper-item">
+          <image src="{{banner[0].img1}}" mode="widthFix" class="image"></image>
+      </swiper-item>
+      <swiper-item wx:if="{{banner[0].img2}}" class="swiper-item">
+          <image src="{{banner[0].img2}}" mode="widthFix" class="image"></image>
+      </swiper-item>
+      <swiper-item class="swiper-item">
+          <image wx:if="{{banner[0].img3}}" src="{{banner[0].img3}}" mode="widthFix" class="image"></image>
+      </swiper-item>
+  </swiper>
+</view>
+

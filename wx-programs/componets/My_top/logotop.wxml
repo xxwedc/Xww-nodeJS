@@ -1,0 +1,24 @@
+<navigator url="/pages/UserInfomation/UserInfomation" hover-class="none">
+<view  class="backG">
+  <view class="blackImg" >
+    <image src="http://inews.gtimg.com/newsapp_ls/0/14264304879/0" mode="widthFix" style="width: 100%;"></image>
+  </view>
+  <view class="userInfoCart">
+    <view class="topBody">
+      <view class="userInfo">
+        <text class="nickName">{{userInfo.nickName}}</text>
+        <image class="vipImg" src="https://www.hualigs.cn/image/619b21c426a9d.jpg"></image>
+        <text class="lv">LV.1</text>
+        <view class="tip">发帖数达100可升LV.2</view>
+      </view>
+      <view class="txt">
+        <image class="tipImage" src="https://www.hualigs.cn/image/619b21c3cb859.jpg"></image>
+        <text>醉后不知天在水，满船清梦压星河</text>
+      </view>
+    </view>
+    <view>
+      <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+    </view>
+  </view>
+</view>
+</navigator>

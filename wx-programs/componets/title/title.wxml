@@ -1,0 +1,4 @@
+<!--componets/title/title.wxml-->
+<view class="title">
+    <slot></slot>
+</view>

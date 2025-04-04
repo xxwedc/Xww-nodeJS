@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "myComment":"../../componets/myComment/myComment"
+  },
+  "navigationBarTitleText": "我的评论"
+}

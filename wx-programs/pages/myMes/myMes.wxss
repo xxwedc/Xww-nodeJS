@@ -1,0 +1,18 @@
+page{
+  z-index: -9;
+  height: 100%;
+  width: 100%;
+  background-color: #e7e7e2;
+
+  /* 高斯模糊 */
+  /* filter: blur(10px); */
+}
+.nonelogin{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  color: #808080;
+  font-size: 18px;
+}
+

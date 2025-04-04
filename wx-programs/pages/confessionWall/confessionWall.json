@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "confessionWallDetail":"/componets/confessionWall_detail/confessionWall_detail"
+  },
+  "navigationBarTitleText": "表白墙"
+}

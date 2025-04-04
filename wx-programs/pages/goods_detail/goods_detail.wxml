@@ -1,0 +1,40 @@
+<!--pages/goods_detail/goods_detail.wxml-->
+<view>
+  <!-- 轮播图 -->
+  <banner banner="{{bannerImg}}"></banner>
+  <!-- 内容 -->
+  <goods_detail goodsDetailData="{{goodsDetailData}}" userData="{{userData}}"></goods_detail>
+  <!-- 底部导航 -->
+  <view class="bar">
+    <!-- 弃用Bar组件 -->
+    <!-- <bar goodsDetailData="{{goodsDetailData}}" userData="{{userData}}"></bar> -->
+
+    <view class="barBG">
+      <view class="modular">
+        <image class="iconImg" src="http://inews.gtimg.com/newsapp_ls/0/14276127016/0"></image>
+        <text>客服</text>
+      </view>
+      <view wx:if="{{isCollect}}" bindtap="changeCollection" class="modular">
+        <image class="iconImg" src="http://inews.gtimg.com/newsapp_ls/0/14323066589/0"></image>
+        <text>收藏</text>
+      </view>
+      <view wx:else bindtap="changeCollection" class="modular">
+        <image class="iconImg" src="http://inews.gtimg.com/newsapp_ls/0/14276156520/0"></image>
+        <text>收藏</text>
+      </view>
+      <navigator hover-class="none" url="/pages/mall_car/car">
+        <view class="modular">
+          <image class="iconImg" style="margin-left: 5px;" src="http://inews.gtimg.com/newsapp_ls/0/14276166781/0"></image>
+          <text>购物车</text>
+        </view>
+      </navigator>
+      <view bindtap="addCar" class="addCar">
+        <text>加入购物车</text>
+      </view>
+      <view class="buyNow">
+        <text>立即购买</text>
+      </view>
+    </view>
+
+  </view>
+</view>

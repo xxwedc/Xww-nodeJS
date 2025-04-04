@@ -1,0 +1,17 @@
+<!--componets/goods_List/goods_List.wxml-->
+<view class="goodsBG">
+  <view wx:for="{{GoodsData}}" wx:key="index" class="goodsInfo">
+  <navigator hover-class="none" url="/pages/goods_detail/goods_detail?id={{item.id}}&userid={{item.userid}}">
+    <view class="imgInfo">
+      <image class="goodsImg" src="{{item.img1}}" mode="heightFix"></image>
+    </view>
+    <view class="detailInfo">
+      <text>{{item.name}}</text>
+    </view>
+    <view class="priceInfo">
+      ￥
+      <text class="price">{{item.price}}</text>
+    </view>
+  </navigator>
+  </view>
+</view>

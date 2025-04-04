@@ -1,0 +1,30 @@
+<!--pages/history/history.wxml-->
+<view wx:if="{{historyData.length!=0}}" wx:for="{{historyData}}" wx:key="index" class="history">
+  <view class="historyInfo">
+    <view  >
+    <!-- 发布者 -->
+    <navigator hover-class="none" url="/pages/foundDetail/foundDetail?FoundID={{item.id}}">
+    <view class="userInfo1">
+      <image class="userInfo1Image" src="{{item.avatarUrl}}"></image>
+      <text class="userInfo1Text">{{item.nickName}}</text>
+    </view>
+    <!-- 内容 -->
+    <view wx:if="{{item.img1}}" class="content">
+      <text class="contentText">{{item.detail}}</text>
+      <view>
+        <image class="contentImg" src="{{item.img1}}"></image>
+        <image class="contentImg" src="{{item.img2}}"></image>
+        <image class="contentImg" src="{{item.img3}}"></image>
+      </view>
+      <!-- 如果没有图片，则输出空的img组件，占格 -->
+    </view>
+    <view wx:else class="content">
+      <text class="contentText3">{{item.detail}}</text>
+    </view>
+  </navigator>
+  </view>
+  </view>
+</view>
+<view class="none" wx:if="{{historyData.length==0}}">
+  <text>浏览历史为空</text>
+</view>

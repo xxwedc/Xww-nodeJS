@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "car_detail":"/componets/car_detail/car_detail"
+  },
+  "navigationBarTitleText": "我的购物车"
+}

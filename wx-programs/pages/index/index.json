@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "banner":"/componets/banner/banner",
+    "title":"/componets/title/title",
+    "newsTitle":"/componets/index_news/news",
+    "major":"/componets/index_major/major",
+    "otherMajor":"/componets/index_otherMajor/otherMajor"
+  }
+}

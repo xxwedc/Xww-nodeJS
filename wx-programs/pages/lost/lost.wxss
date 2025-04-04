@@ -1,0 +1,13 @@
+/* pages/lost/lost.wxss */
+/* pages/found/found.wxss */
+.body{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(235, 235, 235);
+  
+}
+.foundWriteBtn{
+  position: absolute;
+  z-index: 12;
+  top: 100px;
+}

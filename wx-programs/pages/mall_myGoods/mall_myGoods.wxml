@@ -1,0 +1,4 @@
+<!--pages/mall_myGoods/mall_myGoods.wxml-->
+<view>
+<myGoods MyGoodsData="{{MyGoodsData}}"></myGoods>
+</view>

@@ -1,0 +1,9 @@
+<!--pages/found/found.wxml-->
+<view class="body">
+  <!-- 发布按钮 -->
+  <writeBtn userInfo="{{userInfo}}" typeName="{{type}}" class="foundWriteBtn"></writeBtn>
+  <!-- 搜索框 静态-->
+  <search></search>
+  <!-- 详情 -->
+  <detail foundData="{{foundData}}"></detail>
+</view>

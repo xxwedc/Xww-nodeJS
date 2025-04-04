@@ -1,0 +1,25 @@
+<!--pages/newsDetail/detail.wxml-->
+<view class="newsInfo" wx:for="{{news}}" wx:key="targetId">
+  <view class="title">
+    <text>{{item.title}}</text>
+  </view>
+  <view class="authorInfo">
+    <image class="authorImg" src="http://inews.gtimg.com/newsapp_ls/0/14343891093/0"></image>
+    <text class="newsAuthor">{{item.author}}</text>
+    <text class="newsTime">{{item.time}}</text>
+  </view>
+  <view>
+    <view class="NewsIMG">
+      <image src="{{item.img}}" mode="heightFix"></image>
+    </view>
+    <view class="newsDetail">
+      <text user-select="true">{{item.detail}}</text>
+    </view>
+
+  </view>
+  <comment></comment>
+  <!-- 占位view -->
+  <view class="noneDiv"></view>
+  <!-- 评论 -->
+  <sendComment class="sendComment"></sendComment>
+</view>

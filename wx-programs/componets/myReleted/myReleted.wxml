@@ -1,0 +1,40 @@
+<!--componets/myReleted/myReleted.wxml-->
+<view class="backG">
+  <view class="releted" wx:if="{{userInfo.nickName}}">
+    <!-- 标题 -->
+    <view class="reletedTitle">我的服务</view>
+    <!-- 内容 -->
+    <view class="reletedInfo" >
+    <navigator hover-class="none" url="../../pages/UserInfomation/UserInfomation">
+      <view class="myInfo">
+        <image class="myInfoImg" src="https://www.hualigs.cn/image/61ac573d51241.jpg"></image>
+        <view>个人信息</view>
+      </view>
+    </navigator>
+    <navigator hover-class="none" url="../../pages/myComment/myComment">
+      <view class="myInfo">
+        <image class="myInfoImg" src="http://inews.gtimg.com/newsapp_ls/0/14264533957/0"></image>
+        <view>我的评论</view>
+      </view>
+    </navigator>
+    <navigator hover-class="none" url="../../pages/MyPosts/MyPosts">
+      <view class="myInfo">
+        <image class="myInfoImg" src="https://www.hualigs.cn/image/61ac57b42a653.jpg"></image>
+        <view>我的发帖</view>
+      </view>
+    </navigator>
+    <navigator hover-class="none" url="/pages/history/history">
+      <view class="myInfo">
+        <image class="myInfoImg" src="https://www.hualigs.cn/image/61ac573d59922.jpg"></image>
+        <view>浏览历史</view>
+      </view>
+    </navigator>
+    <navigator hover-class="none" url="/pages/more/more">
+      <view class="myInfo">
+        <image class="myInfoImg" src="https://www.hualigs.cn/image/61ac57b43bed3.jpg"></image>
+        <view>更多</view>
+      </view>
+    </navigator>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,31 @@
+<!--componets/index_otherMajor/otherMajor.wxml-->
+<view class="otherInfo">
+  <view class="modular">
+    <navigator hover-class="none" open-type="navigate" url="/pages/confessionWall/confessionWall">
+      <image class="modularIMG" src="http://inews.gtimg.com/newsapp_ls/0/14264266120/0"></image>
+      <text class="moduName">表白墙</text>
+      <text class="moduTip">勇敢说出来</text>
+    </navigator>
+  </view>
+  <view class="modular">
+    <navigator hover-class="none" open-type="navigate" url="/pages/found/found?type=lost">
+      <image class="modularIMG" src="https://www.hualigs.cn/image/619b22335456f.jpg"></image>
+      <text class="moduName">寻物启事</text>
+      <text class="moduTip">寻找丢失的物品</text>
+    </navigator>
+  </view>
+
+  <!-- <view class="modular">
+    <image class="modularIMG" src="https://www.hualigs.cn/image/61ac56c4dab21.jpg"></image>
+    <text class="moduName">吐槽墙</text>
+    <text class="moduTip">吐槽你的不满</text>
+  </view> -->
+  <view class="modular">
+    <image class="modularIMG" src="https://pic1.58cdn.com.cn/nowater/webim/big/n_v2b33b5996aaf34550a2b103cb6a708e21.jpg"></image>
+    <text class="moduName">其它功能</text>
+    <text class="moduTip">加紧开发中...</text>
+  </view>
+  <view class="modular1">
+  </view>
+
+</view>

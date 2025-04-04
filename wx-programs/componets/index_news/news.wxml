@@ -1,0 +1,11 @@
+<!--componets/index_news/news.wxml-->
+<view wx:for="{{newsTitle}}" wx:key="index">
+  <navigator hover-class="none" open-type="navigate" url="{{'../../pages/newsDetail/detail?id='+item.id}}">
+  <view class="newsTitleInfo">
+    <image class="newsTitleImg" src="https://www.hualigs.cn/image/619b22334a4d7.jpg"></image>
+    <view class="newsTitle">
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+  </navigator>
+</view>

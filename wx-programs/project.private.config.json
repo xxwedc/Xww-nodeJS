@@ -1,0 +1,136 @@
+{
+  "setting": {},
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "我的",
+          "pathName": "pages/myMes/myMes",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "失物认领列表",
+          "pathName": "pages/found/found",
+          "query": "type=found",
+          "scene": null
+        },
+        {
+          "name": "用户个人信息",
+          "pathName": "pages/UserInfomation/UserInfomation",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "发布失物认领",
+          "pathName": "pages/writeFound/write",
+          "query": "type=found",
+          "scene": null
+        },
+        {
+          "name": "寻物启事详情",
+          "pathName": "pages/lost/lost",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "测试页面",
+          "pathName": "pages/test/test",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我的发帖",
+          "pathName": "pages/MyPosts/MyPosts",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "found详情",
+          "pathName": "pages/foundDetail/foundDetail",
+          "query": "FoundID=1005",
+          "scene": null
+        },
+        {
+          "name": "新闻详情页面",
+          "pathName": "pages/newsDetail/detail",
+          "query": "id=1",
+          "scene": null
+        },
+        {
+          "name": "我的评论",
+          "pathName": "pages/myComment/myComment",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "搜索页面",
+          "pathName": "pages/searchAdv/searchAdv",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "表白墙信息列表",
+          "pathName": "pages/confessionWall/confessionWall",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "二手商城",
+          "pathName": "pages/shoppingMall/shoppingMall",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "商品详情",
+          "pathName": "pages/goods_detail/goods_detail",
+          "query": "id=11&userid=olAm85JKcESTc3iKVQtzl6j7Vozo",
+          "scene": null
+        },
+        {
+          "name": "购物车",
+          "pathName": "pages/mall_car/car",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我的闲置物品",
+          "pathName": "pages/mall_myGoods/mall_myGoods",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "发布闲置物品页面",
+          "pathName": "pages/mall_SellGoods/mall_SellGoods",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "商品编辑",
+          "pathName": "pages/mall_EditGoods/mall_EditGoods",
+          "query": "goodsid=5",
+          "scene": null
+        },
+        {
+          "name": "我的收藏",
+          "pathName": "pages/mall_Collection/collection",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "更多",
+          "pathName": "pages/more/more",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "浏览历史",
+          "pathName": "pages/history/history",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html"
+}

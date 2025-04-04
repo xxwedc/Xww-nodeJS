@@ -1,0 +1,42 @@
+<view>
+  <!-- 用户个人信息 -->
+  <view wx:if="{{userInfo.nickName}}">
+    <myTop userInfo="{{userInfo}}"></myTop>
+  </view>
+  <!-- 授权页面 -->
+  <view wx:else>
+    <view class="backG">
+      <view class="blackImg">
+        <image src="https://www.hualigs.cn/image/61ac57ea0972f.jpg" mode="widthFix" style="width: 100%;"></image>
+      </view>
+      <view class="userInfoCart">
+        <view class="topBody">
+          <view class="userInfo">
+            <text class="nickName" bindtap="getUserProfile" open-type="getUserProfile">请登录</text>
+            <image class="vipImg" src="https://www.hualigs.cn/image/619b21c426a9d.jpg"></image>
+            <text class="lv">LV.0</text>
+            <view class="tip">SCHOOL-我的</view>
+          </view>
+          <view class="txt">
+            <image class="tipImage" src="https://www.hualigs.cn/image/619b21c3cb859.jpg"></image>
+            <text>祝您拥有美好的一天</text>
+          </view>
+        </view>
+        <view>
+          <image class="avatar" src="https://z3.ax1x.com/2021/11/22/Ix1OBD.jpg"></image>
+        </view>
+      </view>
+    </view>
+    <view class="nonelogin">
+      <text>登陆后即可解锁更多服务！</text>
+    </view>
+  </view>
+  <!-- 商城服务 -->
+  <view wx:if="{{userInfo.nickName}}">
+    <mallReleted></mallReleted>
+  </view>
+  <!-- 我的服务 -->
+  <view>
+    <myReleted userInfo="{{userInfo}}"></myReleted>
+  </view>
+</view>

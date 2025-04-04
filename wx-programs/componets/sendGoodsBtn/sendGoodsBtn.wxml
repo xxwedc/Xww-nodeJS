@@ -1,0 +1,11 @@
+<!--componets/sendGoodsBtn/sendGoodsBtn.wxml-->
+<view class="mallbtn" bindtap="navSell">
+  <view class="btn">
+    <view class="txt1">
+      <text class="buy">卖</text>
+    </view>
+    <view class="txt2">
+      <text>闲置</text>
+    </view>
+  </view>
+</view>

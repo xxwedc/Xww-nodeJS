@@ -1,0 +1,11 @@
+<!--pages/lost/lost.wxml-->
+<!--pages/found/found.wxml-->
+<view class="body">
+<!-- 发布按钮 -->
+<writeBtn class="foundWriteBtn"></writeBtn>
+  <!-- 搜索框 -->
+  <search></search>
+  <!-- 详情 -->
+  <detail foundData="{{foundData}}"></detail>
+  
+</view>

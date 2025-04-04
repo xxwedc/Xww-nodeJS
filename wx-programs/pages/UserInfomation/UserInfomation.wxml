@@ -1,0 +1,65 @@
+<!--pages/UserInfomation/UserInfomation.wxml-->
+<form class="" action="">
+  <view class="fINfo">
+    <view class="userInfo1">
+      <view class="zujian">
+        <text class="left">头像</text>
+        <image class="avatarUrl1" src="{{userInfo.avatarUrl}}"></image>
+      </view>
+      <view class="xian1"></view>
+      <view class="zujian">
+        <text class="left">昵称</text>
+        <text style="color: rgb(226, 216, 196);">{{userInfo.name}}</text>
+      </view>
+      <view class="xian1"></view>
+      <view class="zujian">
+        <text class="left">性别</text>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker">
+            {{array[index]}}
+            <text style="color: rgb(134, 136, 138); margin-left: 5px;">></text>
+          </view>
+
+        </picker>
+      </view>
+      <view class="xian1"></view>
+      <view class="zujian">
+        <text class="left">联系电话</text>
+        <input bindinput='getInputValue' class="weui-input"  placeholder="null" value="{{userInfo.phone}}" />
+      </view>
+      <view class="xian1"></view>
+      <view class="zujian">
+        <text class="left" >城市</text>
+        <picker mode="region" bindchange="bindRegionChange" value="{{region}}" >
+          <view class="picker">
+            {{region}}
+          </view>
+        </picker>
+      </view>
+      <view class="xian1"></view>
+      <view class="zujian">
+        <text class="left">邮箱</text>
+        <input bindinput="getInputEmail" class="weui-input"  placeholder="null" value="{{userInfo.email}}"/>
+      </view>
+
+      <view class="xian1"></view>
+      <view class="zujian">
+        <!-- 截取时间
+        <wxs module="m1">
+          var sub = function (val) {
+            return val.substring(0, 10);
+          }
+          module.exports = {
+            value: sub
+          };
+        </wxs> -->
+        <text class="left">注册时间</text>
+        <text style="color: rgb(125, 126, 128);">{{jionTime}}</text>
+      </view>
+
+    </view>
+
+  </view>
+  <button class="submit" type="primary" bindtap="updateUser" formType="submit">保存</button>
+  <button class="submit1" bindtap="exit" size="default" plain="true">退出登录</button>
+</form>

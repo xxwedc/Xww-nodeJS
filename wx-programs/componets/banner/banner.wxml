@@ -1,0 +1,24 @@
+<!--componets/banner/banner.wxml-->
+<view class="banner">
+  
+    <swiper
+    class="swiper"
+        indicator-dots="true"
+        indicator-active-color="#d43c33"
+        indicator-color="rgba(255,255,0,0,85)"
+        autoplay="true"
+        duration="900"
+        circular="true"
+        interval="3000"
+    >
+        <swiper-item wx:for="{{banner}}" wx:key="targetId" class="swiper-item">
+            <navigator  hover-class="none" open-type="navigate" url="{{'../../pages/newsDetail/detail?id='+item.id}}">
+            <view class="newsTitle">
+                <text >{{item.title}}</text>
+            </view>
+            <image src="{{item.img}}" mode="widthFix" class="image"></image>
+            </navigator>
+        </swiper-item>
+        
+    </swiper>
+</view>

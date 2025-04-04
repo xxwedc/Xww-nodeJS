@@ -1,0 +1,9 @@
+{
+  "navigationStyle":"custom",
+  "usingComponents": {
+    "myTop":"../../componets/My_top/logotop",
+    "title":"../../componets/title/title",
+    "myReleted":"../../componets/myReleted/myReleted",
+    "mallReleted":"../../componets/mallReleted/mallReleted"
+  }
+}

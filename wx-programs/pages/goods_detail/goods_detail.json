@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "banner":"/componets/goods_banner/goods_banner",
+    "goods_detail":"/componets/goods_detail/goods_detail",
+    "bar":"/componets/goods_bar/goods_bar"
+  },
+  "navigationBarTitleText": "商品详情"
+}

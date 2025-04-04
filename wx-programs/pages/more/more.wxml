@@ -1,0 +1,11 @@
+<!--pages/more/more.wxml-->
+<view>
+  <view class="opinion">
+  <image class="opImg" src="http://inews.gtimg.com/newsapp_ls/0/14324579579/0" mode="widthFix"></image>
+    <button class="btn" size="" open-type="feedback">意见与反馈</button>
+  </view>
+  <view class="about">
+    <image class="opImg" src="http://inews.gtimg.com/newsapp_ls/0/14324582459/0" mode="widthFix"></image>
+    <button class="btn" size="" open-type="contact">联系客服</button>
+  </view>
+</view>

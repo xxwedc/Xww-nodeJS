@@ -1,0 +1,45 @@
+<!--componets/found_detail/detail.wxml-->
+<view wx:for="{{foundData}}" wx:key="index" class="fdiv">
+  
+  <view class="foundInfo" bindtap="history" data-id="{{item.id}}">
+    <!-- 发布者 -->
+    <navigator hover-class="none" url="/pages/foundDetail/foundDetail?FoundID={{item.id}}">
+    <view class="userInfo1">
+      <image class="userInfo1Image" src="{{item.avatarUrl}}"></image>
+      <text class="userInfo1Text">{{item.nickName}}</text>
+    </view>
+    <!-- 内容 -->
+    <view wx:if="{{item.img1}}" class="content">
+      <text class="contentText">{{item.detail}}</text>
+      <view>
+        <image class="contentImg" src="{{item.img1}}"></image>
+        <image class="contentImg" src="{{item.img2}}"></image>
+        <image class="contentImg" src="{{item.img3}}"></image>
+      </view>
+      <!-- 如果没有图片，则输出空的img组件，占格 -->
+    </view>
+    <view wx:else class="content">
+      <text class="contentText3">{{item.detail}}</text>
+    </view>
+  </navigator>
+    <!-- 功能 -->
+    <view class="function">
+      <!-- 转发 -->
+      <view>
+        <image class="icon" src="https://www.hualigs.cn/image/619cad34affe0.jpg"></image>
+      </view>
+      <!-- 评论 -->
+      <navigator hover-class="none" url="/pages/foundDetail/foundDetail?FoundID={{item.id}}">
+      <view>
+        <image class="icon" src="https://www.hualigs.cn/image/619cae298fa18.jpg"></image>
+        <text class="text"></text>
+      </view>
+      </navigator>
+      <!-- 按赞 -->
+      <view>
+        <image class="icon" src="https://www.hualigs.cn/image/619cad34b432d.jpg"></image>
+        <text class="text"></text>
+      </view>
+    </view>
+  </view>
+</view>

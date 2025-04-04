@@ -1,0 +1,2 @@
+<!--pages/confessionWall/confessionWall.wxml-->
+<confessionWallDetail cfsWall="{{cfsWall}}"></confessionWallDetail>

@@ -1,0 +1,93 @@
+/* componets/posts_found/posts_found.wxss */
+.fdiv {
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(235, 235, 235);
+
+}
+
+.foundInfo {
+  padding: 10px;
+  width: 90%;
+  height: 240px;
+  border-radius: 12px;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.userInfo1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 150px;
+  
+  
+}
+.bkk{
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  background-color: rgb(235, 235, 235);
+}
+.userInfo1Text {
+  padding-left: 5px;
+  width: 100px;
+  height: 28px;
+  border: rgb(241, 234, 163) solid 1px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 550;
+  margin-left: 10px;
+  overflow: hidden;
+
+}
+
+.contentText {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 10px;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.contentText3{
+  display: block;
+  font-size: 15px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.contentImg {
+  display: inline-block;
+  border-radius: 6px;
+  width: 70px;
+  height: 90px;
+  margin-right: 5px;
+  overflow: hidden;
+}
+.deleteInfo{
+  width: 50px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  float: right;
+  border-radius: 12px;
+  border: black solid 1px;
+  overflow: hidden;
+}
+.deleteImg{
+  height: 20px;
+  width: 20px;
+}
+.deleteText{
+ 
+  padding-top: 10px;
+  font-size: 12px;
+  padding-bottom: 10px;
+  color: rgb(171, 173, 175);
+}

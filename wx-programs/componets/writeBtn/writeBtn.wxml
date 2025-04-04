@@ -1,0 +1,16 @@
+<!--componets/writeBtn/writeBtn.wxml-->
+<view wx:if="{{userInfo}}">
+  <!-- open-type="navigate"; navigate保留当前页面，返回下一页，页面左上角标为返回 -->
+  <navigator hover-class="none" open-type="navigate" url="/pages/writeFound/write?type={{typeName}}">
+    <view class="SendBtn">
+      <image class="image" src="https://www.hualigs.cn/image/619cc79238a5b.jpg"></image>
+    </view>
+  </navigator>
+</view>
+<view wx:else>
+  <navigator hover-class="none" open-type="navigate" url="#">
+    <view  bindtap="showMsg" class="SendBtn">
+      <image class="image" src="https://www.hualigs.cn/image/619cc79238a5b.jpg"></image>
+    </view>
+  </navigator>
+</view>

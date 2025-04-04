@@ -1,0 +1,10 @@
+<!--componets/found_search/search.wxml-->
+<view bindtap="searchAdv" class="view_search">
+    <view class="view_icon_input">
+      <icon class="searchcion" size='20' type='search'></icon>
+      <view class="input_search"><text>请输入关键字</text></view>
+      <view class='sousuo'><text style="color:#fff">GO</text></view>
+    </view>
+</view>
+
+

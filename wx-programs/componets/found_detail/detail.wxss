@@ -1,0 +1,84 @@
+/* componets/found_detail/detail.wxss */
+.fdiv {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(235, 235, 235);
+
+}
+
+.foundInfo {
+  padding: 10px;
+  width: 90%;
+  height: 240px;
+  border-radius: 12px;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.userInfo1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.userInfo1Image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.userInfo1Text {
+  font-size: 18px;
+  font-weight: 550;
+  margin-left: 10px;
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contentText {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 10px;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.contentText3{
+  display: block;
+  font-size: 15px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contentImg {
+  display: inline-block;
+  border-radius: 6px;
+  width: 70px;
+  height: 90px;
+  margin-right: 5px;
+  overflow: hidden;
+}
+
+.function {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 12px 2px 12px;
+
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.text {
+  font-size: 12px;
+  vertical-align: super;
+}

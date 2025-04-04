@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "comment":"/componets/comment/comment",
+    "sendComment":"/componets/sendComment/sendComment"
+  }
+}

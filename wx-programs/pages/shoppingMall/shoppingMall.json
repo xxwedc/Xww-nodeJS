@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "goods_List":"../../componets/goods_List/goods_List",
+    "sendGoodsBtn":"/componets/sendGoodsBtn/sendGoodsBtn"
+  },
+  "navigationBarTitleText": "二手商城"
+}

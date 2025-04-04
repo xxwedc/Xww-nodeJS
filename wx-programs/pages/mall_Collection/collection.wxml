@@ -1,0 +1,38 @@
+<!--pages/mall_Collection/collection.wxml-->
+<view>
+  <view class="Collection">
+    <text>收藏夹({{collection.length}})</text>
+  </view>
+  <view wx:if="{{collection.length!==0}}">
+    <view wx:for="{{collection}}" wx:key="index" class="collectionInfo">
+      <view class="goodsInfo">
+        <view class="goods">
+          <view class="goodsImgView">
+            <image class="goodsImg" src="{{item.img1}}"></image>
+          </view>
+          <view class="goodsDetail">
+            <text class="goodsName">{{item.name}}</text>
+            <text class="goodsDetailTxt">{{item.detail}}</text>
+            <text class="goodsPrice">￥ {{item.price}}</text>
+          </view>
+        </view>
+        <view class="checkGoods">
+          <text data-cetid="{{index}}" bindtap="delCet" class="delCollection">取消收藏</text>
+          <navigator hover-class="none" url="/pages/goods_detail/goods_detail?id={{item.id}}&userid={{item.userid}}">
+            <text class="checkGoodsTxt">查看商品详情</text>
+          </navigator>
+        </view>
+        <view class="xianView">
+          <view class="xian"></view>
+        </view>
+      </view>
+    </view>
+    <view class="bottomTip">
+      到底啦~
+    </view>
+  </view>
+  <view wx:else class="CollectionNone">
+    <text>空空如也</text>
+  </view>
+
+</view>

@@ -1,0 +1,21 @@
+/* componets/index_news/news.wxss */
+.newsTitleInfo{
+  display: flex;
+  width: 100%;
+  color: rgb(86, 97, 97);
+}
+.newsTitleImg{
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+.newsTitle{
+  width: 80%;
+  height: 30px;
+  /* 结束后变为省略号 */
+  text-overflow: ellipsis;
+  /* 不换行 */
+  white-space: nowrap;
+  overflow: hidden;
+}

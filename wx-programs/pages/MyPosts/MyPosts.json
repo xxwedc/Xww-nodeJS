@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "posts_found":"/componets/posts_found/posts_found"
+  }
+}

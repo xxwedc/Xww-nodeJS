@@ -1,0 +1,16 @@
+<!--componets/comment/comment.wxml-->
+<view class="commnets">
+    <view class="title">评论</view>
+    <view class="commnetsList"  wx:for="{{commentData}}" wx:key="index">
+       <view class="headerImg">
+         <view class="headerImgBox">
+            <image class="img"  src="{{item.avatarUrl}}"></image>
+         </view>
+       </view>
+       <view class="commentsInfo">
+          <view class="name">{{item.userName}}</view>
+          <view class="time">{{item.time}}</view>
+          <view class="content">{{item.detail}}</view>
+       </view>
+    </view>
+</view>

@@ -1,0 +1,39 @@
+<!--componets/myComment/myComment.wxml-->
+<view>
+
+  <view wx:if="{{commentData[0].userName}}" class="comment">
+    <view class="myCommentTopTip">
+      <text>--- 以下评论根据时间展示 ---</text>
+    </view>
+    <view class="myCommentInfo" wx:for="{{commentData}}" wx:key="index">
+      <view class="userCommentInfo">
+        <view class="userInfo1">
+          <image class="userImg" src="{{item.avatarUrl}}"></image>
+        </view>
+        <view class="userMessage">
+          <text class="userName">{{item.userName}}</text>
+          <text class="userTime">{{item.time}}</text>
+        </view>
+        <view class="deleteBtn" bindtap="deleteComment" data-id="{{item.cid}}">
+          <image class="deleteBtnImg" src="https://www.hualigs.cn/image/61ac5853102f1.jpg"></image>
+        </view>
+      </view>
+      <view class="commentDetail">
+        <text class="userCommentDetail">{{item.detail}}</text>
+      </view>
+      <view>
+        <navigator hover-class="none" url="/pages/foundDetail/foundDetail?FoundID={{item.foundID}}">
+          <view class="foundInfo">
+            <text class="foundUserName">Tip:</text>
+            <text class="foundUserDetail">点击即可查看帖子详情</text>
+          </view>
+        </navigator>
+      </view>
+      <view></view>
+    </view>
+  </view>
+  <!-- 用户没有发表过评论则显示下列内容 -->
+  <view wx:else class="noneComment">
+    <text>暂无评论</text>
+  </view>
+</view>

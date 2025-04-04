@@ -1,0 +1,50 @@
+<!--componets/car_detail/car_detail.wxml-->
+<view>
+  <view class="CarTop">
+    <view class="topTip">
+      <text class="CarTxt">购物车</text>
+      <text>共{{carData.length}}件商品</text>
+    </view>
+    <view class="delCar">
+      <text bindtap="allDelCar" class="delCarTxt">清空购物车</text>
+    </view>
+  </view>
+  <view wx:for="{{carData}}" wx:key="index" class="carBg">
+    <view class="carInfo">
+      <view wx:if="{{item.isSeleted}}" class="checkboxInfo">
+        <icon bindtap="changeIcon" data-index="{{index}}" type="success" size="28"></icon>
+      </view>
+      <view wx:else class="checkboxInfo">
+        <icon bindtap="changeIcon" data-index="{{index}}" type="circle" size="28"></icon>
+      </view>
+      <view bindtap="Navdetail" data-index="{{index}}" class="imgInfo">
+        <image class="goodsImg" src="{{item.img1}}" mode="heightFix"></image>
+      </view>
+      <view bindtap="Navdetail" data-index="{{index}}" class="goodsDetailInfo">
+        <view class="goodsName"><text>{{item.name}}</text></view>
+        <view class="goodsDetail"><text>{{item.detail}}</text></view>
+        <view class="priceInfo">￥<text class="price">{{item.price}}</text></view>
+      </view>
+    </view>
+  </view>
+  <view class="bottomTip">
+    <text>到底啦</text>
+  </view>
+  <view class="car_bar">
+    <view wx:if="{{isSeletedAll}}" bindtap="allCheck" class="allCheckBox">
+      <icon data-index="{{index}}" type="success" size="30"></icon>
+      <text>全选</text>
+    </view>
+    <view wx:else bindtap="allCheck" class="allCheckBox">
+      <icon data-index="{{index}}" type="circle" size="30"></icon>
+      <text>全选</text>
+    </view>
+    <view class="buyInfo">
+      <view class="priceSum">
+        <text>合计:￥</text>
+        <text class="sum">{{totalPrice}}</text>
+      </view>
+      <view class="buy"><text>结算</text></view>
+    </view>
+  </view>
+</view>

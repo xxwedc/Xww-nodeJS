@@ -1,0 +1,78 @@
+/* pages/history/history.wxss */
+page{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(235, 235, 235);
+}
+.history{
+  width: 100%;
+  /* height: 220px; */
+  margin-top: 20px;
+  background-color: white;
+}
+.historyInfo{
+  padding: 10px;
+}
+
+.foundInfo {
+  padding: 10px;
+  width: 90%;
+  height: 240px;
+  border-radius: 12px;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.userInfo1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.userInfo1Image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.userInfo1Text {
+  font-size: 18px;
+  font-weight: 550;
+  margin-left: 10px;
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contentText {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 10px;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.contentText3{
+  display: block;
+  font-size: 15px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contentImg {
+  display: inline-block;
+  border-radius: 6px;
+  width: 70px;
+  height: 90px;
+  margin-right: 5px;
+  overflow: hidden;
+}
+.none{
+  display: flex;
+  justify-content: center;
+  margin-top: 50%;
+  color: rgb(82, 83, 83);
+}

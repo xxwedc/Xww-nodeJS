@@ -1,0 +1,18 @@
+<!--pages/searchAdv/searchAdv.wxml-->
+<view>
+  <!-- 搜索框 -->
+  <view>
+    <view class="view_search">
+      <view class="view_icon_input">
+        <icon class="searchcion" size='20' type='search'></icon>
+        <input class="input_search"  bindinput="searchResult" auto-focus placeholder="请输入关键字"  />
+        <view class='sousuo' bindtap="bt_search"><text style="color:#fff">GO</text></view>
+      </view>
+    </view>
+  </view>
+  <!-- 搜索结果展示页面 -->
+  <view wx:if="{{key}}">
+    <detail foundData="{{foundData}}"></detail>
+  </view>
+  
+</view>

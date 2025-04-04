@@ -1,0 +1,27 @@
+<!--componets/confessionWall_detail/confessionWall_detail.wxml-->
+<view>
+
+  <view class="BGimg">
+    <image class="bgIMGWall" src="http://inews.gtimg.com/newsapp_ls/0/14271203060/0" mode="widthFix"></image>
+  </view>
+  <view class="wallTip"><text>以下内容按发布时间排序</text></view>
+  <view wx:for="{{cfsWall}}" wx:key="index" class="wall_bg">
+    <view class="wall_view">
+      <view wx:if="{{item.addressee}}" class="ToView">
+        <text class="address">{{item.addressee}}</text>
+      </view>
+      <view wx:else class="ToView">
+        <text class="address">表白</text>
+      </view>
+      <view class="detail_view">
+        <text class="detail">{{item.detail}}</text>
+      </view>
+      <view wx:if="{{item.img}}" class="detail_img">
+      <image class="Wall_image" src="{{item.img}}" mode="widthFix"></image>
+      </view>
+      <view class="authorView">
+        <text class="author">— {{item.sender}}</text>
+      </view>
+    </view>
+  </view>
+</view>

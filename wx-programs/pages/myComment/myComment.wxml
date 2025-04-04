@@ -1,0 +1,7 @@
+<!--pages/myComment/myComment.wxml-->
+<view>
+  <!-- 我的评论 -->
+  <view>
+    <myComment commentData="{{commentData}}"></myComment>
+  </view>
+</view>

@@ -1,0 +1,48 @@
+<!--pages/mall_SellGoods/mall_SellGoods.wxml-->
+<view>
+  <view class="goodsNameInfo">
+    <text style="color: rgb(109, 109, 109);">宝贝名称:</text>
+    <input bindinput="getGoodsName" class="inputName" type="text" value="{{goodsData.name}}" />
+  </view>
+  <view class="goodsDetail">
+    <view class="detailInput">
+      <textarea class="container1" bindinput="getGoodsDetail" placeholder="描述一下你要卖的宝贝吧~" value="{{goodsData.detail}}" />
+    </view>
+    <view class="addImg">
+      <view wx:if="{{goodsData.img1}}">
+        <image class="foundIMG" src="{{goodsData.img1}}"></image>
+      </view>
+      <view wx:if="{{goodsData.img2}}">
+        <image class="foundIMG" src="{{goodsData.img2}}"></image>
+      </view>
+      <view wx:if="{{goodsData.img3}}">
+        <image class="foundIMG" src="{{goodsData.img3}}"></image>
+      </view>
+    </view>
+  </view>
+  <view class="goodsType">
+    <view class="typeIcon">
+      <image class="icon" src="http://inews.gtimg.com/newsapp_ls/0/14289104166/0"></image>
+      <text style="margin-left: 8px;">分类</text>
+      <view class="typePicker">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{typeData}}">
+          <view class="picker">
+            当前选择: {{typeData[index]}}
+          </view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <view class="goodsPrice">
+    <view class="typeIcon">
+      <image class="icon" src="http://inews.gtimg.com/newsapp_ls/0/14289114402/0"></image>
+      <text style="margin-left: 8px;">价格</text>
+      <input class="priceInput" bindinput="getPrice"  type="digit" placeholder="0.00" value="{{goodsData.price}}"/>
+    </view>
+  </view>
+  <view class="bottomBtn">
+    <view bindtap="changeBtn" class="confirmBtn">
+      <text>修改</text>
+    </view>
+  </view>
+</view>

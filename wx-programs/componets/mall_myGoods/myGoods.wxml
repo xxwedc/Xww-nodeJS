@@ -1,0 +1,23 @@
+<!--componets/mall_myGoods/myGoods.wxml-->
+<view>
+  <view class="myGoodsTitle">
+    <text>闲置物品</text>
+  </view>
+  <view wx:for="{{MyGoodsData}}" wx:key="index" class="carBg">
+    <view  class="carInfo">
+      <view class="imgInfo">
+        <image class="goodsImg" src="{{item.img1}}" mode="heightFix"></image>
+      </view>
+      <view class="goodsDetailInfo">
+        <view class="goodsName"><text>{{item.name}}</text></view>
+        <view class="goodsDetail"><text>{{item.detail}}</text></view>
+        <view class="priceInfo">￥<text class="price">{{item.price}}</text></view>
+      </view>
+      <view bindtap="navEdit" data-goodsid="{{item.id}}"  class="btnInfo">
+          <view class="edit">编辑</view>
+          <view class="delete" data-goodsID="{{item.id}}" bindtap="deleteMyGoods">下架</view>
+      </view>
+    </view>
+
+  </view>
+</view>

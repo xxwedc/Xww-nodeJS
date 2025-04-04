@@ -1,0 +1,40 @@
+/* componets/index_otherMajor/otherMajor.wxss */
+.otherInfo{
+  display: flex;
+  align-items: center;
+  /* 元素换行 */
+  flex-wrap: wrap;
+  /* 每个元素两侧的间隔相等。所以，元素之间的间隔比元素与边框的间隔大一倍。 */
+  justify-content : space-around;
+  width: 350px;
+  height: 250px;
+}
+.modular{
+  width: 45%;
+  height: 80px;
+  background-color: rgb(234, 235, 236);
+  border-radius: 10px;
+  text-align: center;
+}
+.modularIMG{
+  width: 30px;
+  height: 30px;
+  margin-top: 12px;
+}
+.moduName{
+  font-weight: 800;
+  position: relative;
+  bottom: 8px;
+  left: 5px;
+}
+.moduTip{
+  display: block;
+  font-size: 14px;
+}
+.modular1{
+  width: 45%;
+  height: 80px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+}

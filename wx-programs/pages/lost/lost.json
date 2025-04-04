@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "detail":"/componets/found_detail/detail",
+    "search":"/componets/found_search/search",
+    "writeBtn":"/componets/writeBtn/writeBtn"
+  }
+}

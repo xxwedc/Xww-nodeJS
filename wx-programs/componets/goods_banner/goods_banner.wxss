@@ -1,0 +1,13 @@
+/* componets/goods_banner/goods_banner.wxss */
+.banner{
+  width: 100%;
+  height: 500rpx;
+  /* border-radius: 20rpx; */
+  overflow: hidden;
+  /* height: calc(118*750rpx/320); */
+}
+.swiper,.swiper-item,.image{
+  width: 100%;
+  height: 100%;
+  /* border-radius: 20rpx; */
+}

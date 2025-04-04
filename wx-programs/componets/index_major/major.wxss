@@ -1,0 +1,47 @@
+/* componets/index_major/major.wxss */
+.majorInfo{
+  width: 350px;
+  height: 150px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 16rpx;
+  overflow: hidden;
+  border: 1px solid rgb(219, 214, 214);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.xian{
+  width: 1px;
+  height: 100%;
+  background-color: rgb(219, 214, 214);
+}
+.find{
+  width: 50%;
+  height: 150px;
+  text-align: center;
+  
+}
+.wall{
+  width: 50%;
+  height: 150px;
+  text-align: center;
+}
+.findIMG{
+  width: 60px;
+  height: 60px;
+  margin-top: 15px;
+}
+.find_title,.find_tip{
+  display: block;
+}
+.find_title{
+  font-size: 20px;
+  font-weight:bold;  
+}
+.find_tip{
+  color: rgb(134, 137, 139);
+  font-size: 15px;
+}
+
+
+

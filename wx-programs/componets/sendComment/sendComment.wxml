@@ -1,0 +1,9 @@
+<!--componets/sendComment/sendComment.wxml-->
+<view class="sendComment">
+  <view class="input">
+    <input type="text" bindinput='getInputValue'  placeholder="发表你的评论" value="" />
+  </view>
+  <view bindtap="sendComment" class="sendBtn">
+    <text>发送</text>
+  </view>
+</view>

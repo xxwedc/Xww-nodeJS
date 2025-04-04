@@ -1,0 +1,4 @@
+/* pages/MyPosts/MyPosts.wxss */
+page{
+  background-color: rgb(235, 235, 235);
+}

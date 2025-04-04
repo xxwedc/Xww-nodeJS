@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "top":"/componets/found_top/top",
+    "comment":"/componets/comment/comment",
+    "sendComment":"/componets/sendComment/sendComment"
+  },
+  "navigationBarTitleText": "失物招领详情"
+}

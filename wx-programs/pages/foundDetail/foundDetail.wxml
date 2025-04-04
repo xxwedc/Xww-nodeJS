@@ -1,0 +1,11 @@
+<!--pages/foundDetail/foundDetail.wxml-->
+<view class="page">
+<!-- 内容 -->
+  <top foundDetailData='{{foundDetailData}}'></top>
+  <!-- 评论 -->
+  <comment commentData="{{commentData}}"></comment>
+  <!-- 占位view -->
+  <view class="noneDiv"></view>
+  <!-- 发布评论按钮 -->
+  <sendComment class="sendComment" foundID='{{foundID}}'></sendComment>
+</view>

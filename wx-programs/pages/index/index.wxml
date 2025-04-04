@@ -1,0 +1,30 @@
+<view class="mask">
+<image class="indexIMG" src="" mode="widthFix"></image>
+  <view>
+    <!-- 轮播图 -->
+    <banner banner="{{bannerImg}}"></banner>
+  </view>
+
+  <title>
+    <text>校园资讯</text>
+  </title>
+  <view>
+    <newsTitle newsTitle="{{bannerImg}}"></newsTitle>
+  </view>
+
+  <!-- 功能模块 -->
+  <title>
+    <text>常用功能</text>
+  </title>
+  <view class="major">
+    <major></major> 
+  </view>
+  <!-- 其它功能模块 -->
+  <title>
+    <text>其它功能</text>
+  </title>
+  <view class="otherMajor">
+    <otherMajor></otherMajor>
+  </view>
+
+</view>

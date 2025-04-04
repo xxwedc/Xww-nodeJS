@@ -1,0 +1,4 @@
+<!--pages/MyPosts/MyPosts.wxml-->
+<view>
+  <posts_found postsData='{{postsData}}'></posts_found>
+</view>

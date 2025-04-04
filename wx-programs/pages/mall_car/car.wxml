@@ -1,0 +1,9 @@
+<!--pages/mall_car/car.wxml-->
+<view>
+  <view wx:if="{{carData.length>0}}">
+    <car_detail carData="{{carData}}"></car_detail>
+  </view>
+  <view class="noneCar" wx:else>
+    <text>购物车空空如也</text>
+  </view>
+</view>

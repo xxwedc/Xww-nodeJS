@@ -1,0 +1,26 @@
+<!--componets/mallReleted/mallReleted.wxml-->
+<view class="mallbg">
+  <view class="mallInfo">
+    <!-- <view class="malltitle">
+      <text>二手商城</text>
+    </view> -->
+    <view class="reletedInfo">
+      <view class="mymall" bindtap="navMyGoods">
+        <image class="mallImg" src="http://inews.gtimg.com/newsapp_ls/0/14275243518/0"></image>
+        <view class="mallText">我的闲置</view>
+      </view>
+      <navigator hover-class="none" url="/pages/mall_car/car">
+        <view class="mymall">
+          <image class="mallImg" src="http://inews.gtimg.com/newsapp_ls/0/14275245705/0"></image>
+          <view class="mallText">购物车</view>
+        </view>
+      </navigator>
+      <navigator hover-class="none" url="/pages/mall_Collection/collection">
+        <view class="mymall">
+          <image class="mallImg" src="http://inews.gtimg.com/newsapp_ls/0/14275238878/0"></image>
+          <view class="mallText">收藏</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

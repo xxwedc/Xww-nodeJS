@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "detail":"/componets/found_detail/detail"
+  }
+}

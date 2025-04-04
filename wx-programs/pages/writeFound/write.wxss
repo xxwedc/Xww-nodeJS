@@ -1,0 +1,119 @@
+/* componets/found_detail/detail.wxss */
+.fdiv {
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(235, 235, 235);
+
+}
+
+.foundInfo {
+  padding: 10px;
+  width: 90%;
+  height: 540px;
+  border-radius: 12px;
+  margin-top: 10px;
+  background-color: white;
+  margin-top: 50px;
+}
+
+.userInfo1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.userInfo1Image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.userInfo1Text {
+  font-size: 18px;
+  font-weight: 550;
+  margin-left: 10px;
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.date{
+  font-size: 12px;
+  color: rgb(85, 85, 85);
+  margin-left: 140px;
+}
+.container1{
+  background-color: rgb(240, 241, 172);
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 12px;
+  font-size: 14px;
+  color: rgb(103, 107, 107);
+}
+.addImg{
+  height: 180px;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 10px;
+}
+.foundIMG{
+  float: left;
+  height: 110px;
+  width: 90px;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-left: 5px;
+}
+.btn{
+  margin-top: 30px;
+}
+.chooseimg {
+  background-color: #fff;
+}
+
+.weui-uploader__input-box {
+  float: left;
+  position: relative;
+  margin-right: 9px;
+  margin-bottom: 9px;
+  width: 180rpx;
+  height: 180rpx;
+  border: 1px solid #d9d9d9;
+}
+
+.weui-uploader__input-box:before {
+  width: 2px;
+  height: 39.5px;
+}
+
+.weui-uploader__input-box:after, .weui-uploader__input-box:before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #d9d9d9;
+}
+
+.weui-uploader__input-box:after {
+  width: 39.5px;
+  height: 2px;
+}
+
+.weui-uploader__input-box:after, .weui-uploader__input-box:before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #d9d9d9;
+}
+

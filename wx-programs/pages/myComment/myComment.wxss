@@ -1,0 +1,6 @@
+/* pages/myComment/myComment.wxss */
+page{
+  background-color: rgb(235, 235, 235);
+  width: 100%;
+  height: 100%;
+}

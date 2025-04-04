@@ -1,0 +1,28 @@
+<!--componets/found_top/top.wxml-->
+<view class="top1" wx:for="{{foundDetailData}}" wx:key="index">
+  <view class="userInfo">
+    <view class="usermsg">
+      <image class="Uimg" src="{{item.avatarUrl}}"></image>
+    </view>
+    <view class="user">
+      <text class='userName'>{{item.nickName}}</text>
+      <text class="time">{{item.time}}</text>
+    </view>
+  </view>
+  <view>
+    <view class="content">
+      <text class="txt">{{item.detail}}</text>
+    </view>
+    <view  class="contentImg">
+    <view wx:if="{{item.img1}}">
+      <image src="{{item.img1}}" mode="widthFix"></image>
+    </view>
+      <view wx:if="{{item.img2}}">
+        <image src="{{item.img2}}" mode="widthFix"></image>
+      </view>
+      <view wx:if="{{item.img3}}">
+        <image src="{{item.img3}}" mode="widthFix"></image>
+      </view>
+    </view>
+  </view>
+</view>

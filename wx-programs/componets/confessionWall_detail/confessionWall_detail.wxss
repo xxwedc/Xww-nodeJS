@@ -1,0 +1,39 @@
+/* componets/confessionWall_detail/confessionWall_detail.wxss */
+.bgIMGWall {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.wall_bg {
+  display: flex;
+  justify-content: center;
+
+}
+.wallTip{
+ margin-top: 10px;
+ text-align: center;
+ font-size: 12px;
+ color: rgb(153, 153, 153);
+}
+.wall_view {
+  padding: 10px;
+  margin-top: 50px;
+  width: 90%;
+  border: rgb(165, 165, 165) 1px solid;
+}
+.ToView{
+  color: red;
+  font-size: 14px;
+  font-weight: 650;
+}
+.detail_view{
+  font-size: 14px;
+  color: rgb(100, 100, 100);
+  margin: 8px 0px 10px 0px;
+}
+.authorView{
+  color: rgb(175, 175, 175);
+  font-size: 12px;
+  margin-top: 10px;
+  float: right;
+}

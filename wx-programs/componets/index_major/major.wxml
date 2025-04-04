@@ -1,0 +1,20 @@
+<!--componets/index_major/major.wxml-->
+<view class="majorInfo">
+  
+    <view class="find">
+      <navigator hover-class="none" open-type="navigate" url="/pages/found/found?type=found">
+        <image class="findIMG" src="http://inews.gtimg.com/newsapp_ls/0/14264261087/0"></image>
+        <text class="find_title">失物招领</text>
+        <text class="find_tip">寻找失主</text>
+      </navigator>
+    </view>
+ 
+    <view class="xian"></view>
+    <view class="wall">
+      <navigator hover-class="none" open-type="navigate" url="/pages/shoppingMall/shoppingMall">
+        <image class="findIMG" src="http://inews.gtimg.com/newsapp_ls/0/14264275768/0"></image>
+        <text class="find_title">二手商城</text>
+        <text class="find_tip">二手物品交易</text>
+      </navigator>
+    </view>
+</view>

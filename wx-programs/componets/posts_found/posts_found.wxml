@@ -1,0 +1,52 @@
+<!--componets/posts_found/posts_found.wxml-->
+
+<view class="fdiv">
+  <view wx:for="{{postsData}}" wx:key="index" class="foundInfo">
+  <navigator hover-class="none" url="/pages/foundDetail/foundDetail?FoundID={{item.id}}">
+    <!-- 内容所属模块 -->
+    <view class="userInfo1">
+      <view class="bkk">
+      </view>
+      <!--wxml-->
+      <wxs module="m1">
+        var type=function(name){
+
+            // 定义type变量
+            var typeName=""
+            if(name=='found'){
+              typeName='失物认领'
+            }
+            else if(name=='lost'){
+              typeName='寻物启事'
+            }
+
+            // 返回变量
+            return typeName
+          }
+        module.exports.type = type;
+      </wxs>
+      <view  class="userInfo1Text">
+        <text>-{{m1.type(item.type)}}</text>
+      </view>
+      
+    </view>
+    <!-- 内容 -->
+    <view wx:if="{{item.img1}}" class="content">
+      <text class="contentText">{{item.detail}}</text>
+      <view>
+        <image class="contentImg"  src="{{item.img1}}"></image>
+        <image class="contentImg"  src="{{item.img2}}" ></image>
+        <image class="contentImg"  src="{{item.img3}}" ></image>
+      </view>
+    </view>
+    <!-- 如果没有图片，则输出 -->
+    <view wx:else class="content">
+      <text class="contentText3">{{item.detail}}</text>
+    </view>
+  </navigator>
+    <view class="deleteInfo" bindtap="gotoShowID" data-id="{{item.id}}">
+      <image class="deleteImg" src="https://www.hualigs.cn/image/61ac5853102f1.jpg"></image>
+      <text class="deleteText">删除</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "myGoods":"/componets/mall_myGoods/myGoods"
+  },
+  "navigationBarTitleText": "我的闲置"
+}
